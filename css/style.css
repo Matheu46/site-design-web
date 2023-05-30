@@ -1,0 +1,92 @@
+@import './global.css';
+
+.header {
+  background: #B1DA89;
+  padding: 20px 32px;
+  padding-bottom: 0px;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.section-principal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.section-principal h1 {
+  font-size: 3rem;
+}
+
+.computador {
+  height: 180px;
+}
+
+.menu {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  /* background: red; */
+}
+
+.menu a {
+  text-decoration: none;
+  padding: 10px 20px;
+  background: white;
+  display: inline-block;
+}
+
+.anuncie-aqui {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 32px;
+  background: #F4F4F4;
+}
+
+.box-anuncio {
+  text-align: center;
+  color: white;
+  margin: 32px auto;
+  max-width: 740px;
+  background: #313131;
+  padding: 32px 0;
+}
+
+.sobre {
+  background: #F4F4F4;
+  padding: 20px 32px;
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.sobre h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.sobre p {
+  font-size: 1.125rem
+}
+
+@media (max-width: 650px) {
+  .section-principal h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .sobre {
+    grid-template-columns: 1fr;
+  }
+}
