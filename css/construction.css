@@ -1,0 +1,15 @@
+.construcao {
+  max-width: 964px;
+  background: #F4F4F4;
+  margin: 0 auto;
+  padding: 32px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+}
+
+.construcao-img {
+  margin: 0 auto;
+  padding: 0 10px;
+}
