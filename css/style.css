@@ -13,7 +13,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
+  /* position: relative; */
 }
 
 .section-principal h1 {
@@ -21,25 +21,26 @@
 }
 
 .computador {
-  height: 180px;
+  max-height: 180px;
 }
 
 .menu {
+  width: 100%;
   max-width: 900px;
   margin: 0 auto;
   padding: 0;
-}
-
-.menu ul {
   display: flex;
   justify-content: center;
   gap: 10px;
-  width: 100%;
   /* background: red; */
+}
+.menu li {
+  width: 100%;
+  flex: 1;
 }
 
 .menu a {
-  text-decoration: none;
+  color: #313131;
   padding: 10px 20px;
   background: white;
   display: inline-block;
@@ -141,6 +142,10 @@
   .section-principal h1 {
     font-size: 2rem;
   }
+  .menu {
+    width: 100%;
+    gap: 0;
+  }
   .sobre {
     grid-template-columns: 1fr;
   }
@@ -153,5 +158,16 @@
   .redes-sociais {
     flex-wrap: wrap;
   }
+}
 
+@media (max-width: 420px) {
+  .section-principal h1 {
+    font-size: 1.5rem;
+  }
+  .computador {
+    max-height: 120px;
+  }
+  .menu a {
+    font-size: 0.875rem;
+  }
 }
