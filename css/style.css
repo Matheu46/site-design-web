@@ -34,10 +34,6 @@
   gap: 10px;
   /* background: red; */
 }
-.menu li {
-  width: 100%;
-  flex: 1;
-}
 
 .menu a {
   color: #313131;
